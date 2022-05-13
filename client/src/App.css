@@ -1,0 +1,515 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(228, 66%, 53%);
+  --first-color-alt: hsl(228, 66%, 47%);
+  --first-color-light: hsl(228, 62%, 59%);
+  --first-color-lighten: hsl(228, 100%, 97%);
+  --second-color: hsl(25, 83%, 53%);
+  --title-color: hsl(228, 57%, 28%);
+  --text-color: hsl(228, 15%, 50%);
+  --text-color-light: hsl(228, 12%, 75%);
+  --border-color: hsl(228, 99%, 98%);
+  --body-color: #fff;
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .3s; /* For animation dark mode */
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.section__title span {
+  color: var(--second-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--second-color);
+}
+
+.main {
+  overflow: hidden; /* For the animations ScrollReveal*/
+}
+
+/*=============== HEADER & NAV ===============*/
+
+
+/* Change background header */
+
+
+/* Active link */
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== LOGOS ===============*/
+
+
+/*=============== POPULAR ===============*/
+
+
+/* Swiper class */
+
+
+/*=============== VALUE ===============*/
+
+
+/*Rotate icon and add shadows*/
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== SUBSCRIBE ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width : 350px){
+  
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .section{
+    padding: 3.5rem 0 1rem;
+  }
+  .home{
+    padding-bottom: 0;
+  }
+  .contact__card{
+    grid-template-columns: repeat(1, 180px);
+    justify-content: center;
+
+  }
+}
+
+@media screen and (max-width : 320px){
+  
+  .nav__menu{
+    padding: 1.3rem 1.5rem;
+  }
+  .home__value{
+    column-gap: 1rem;
+  }
+  .home__img{
+    width: 220px;
+    height: 280px;
+  }
+  .home__orbe{
+    width: 240px;
+    height: 264px;
+  }
+  .logos__container{
+    gap: 2rem 1rem;
+  }
+  .popular__card{
+    width: 230px;
+    padding: .5rem .5rem .75rem;
+  }
+  .value__img,
+  .contact__img{
+    width: 220px;
+    height: 260px;
+  }
+  .value__orbe{
+    width: 236px;
+    height: 280px;
+  }
+  .subscribe__container{
+    padding: 2rem 1rem;
+  }
+  .footer__content{
+    gap: 2.5rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width : 576px) {
+  .nav__menu{
+    width: 342px;
+  }
+  .home__search{
+    width: 412px;
+  }
+  .contact__card{
+    grid-template-columns: repeat(2, 192px);
+    justify-content: center;
+  }
+  .footer__content{
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+@media screen and (min-width : 767px) {
+  
+  
+  .home__container{
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+  }
+  .home__orbe{
+    align-self: flex-end;
+  }
+  .home__data{
+    padding-bottom: 2rem;
+  }
+  .logos__container{
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+  }
+  .value__container,
+  .contact__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .contact__images{
+    order: 1;
+  }
+  .contact__card{
+    justify-content: initial;
+  }
+  .subscribe__container{
+    padding: 3rem 13rem;
+  }
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+  
+}
+/* For large devices */
+@media screen and (min-width : 1023px) {
+  .section{
+    padding: 7.5rem 0 1rem;
+  }
+  .section__title{
+    font-size: 2.25rem;
+  }
+  .section__subtitle{
+    font-size: var(--normal-font-size);
+  }
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__menu{
+    width: initial;
+    margin-left: auto;
+  }
+  .nav__list{
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav__link{
+    color: var(--text-color-light);
+  }
+  .nav__link i{
+    display: none;
+  }
+  .nav__button{
+    display: inline-block;
+    
+  }
+  .active-link{
+    background: none;
+    box-shadow: none;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+
+  }
+  .change-theme{
+    margin: 0 3rem;
+    color: var(--text-color-light);
+  }
+  .scroll-header .nav__link,
+  .scroll-header .change-theme{
+    color: var(--text-color);
+
+  }
+  .scroll-header .active-link{
+    color: var(--first-color);
+  }
+  .home{
+    padding-bottom: 0;
+
+  }
+  .home__container{
+    padding-top: 5rem;
+    column-gap: 2rem;
+  }
+  .home__data{
+    padding-bottom: 4rem;
+  }
+  .home__title{
+    margin-bottom: 2rem;
+  }
+  .home__description,
+  .home__search{
+    margin-bottom: 3rem;
+  }
+  .home__value{
+    column-gap: 3.5rem;
+
+  }
+  .home__orbe{
+    width: 504px;
+    height: 611px;
+    border-radius: 256px 256px 0 0;
+
+  }
+  .home__img{
+    width: 472px;
+    height: 634px;
+    border-radius: 236px 236px 12px 12px;
+    bottom: -2.5rem;
+  }
+  .logo__img img{
+    height: 100px;
+  }
+  .popular__container{
+    padding-top: 3rem;
+
+  }
+  .popular__card{
+    width: 320px;
+    padding: .75rem .75rem 2rem;
+  }
+  .popular__data{
+    padding: 0 .25rem 0 .75rem;
+  }
+  .value__container,
+  .contact__container{
+    align-items: flex-start;
+    column-gap: 5rem;
+  }
+  .value__orbe,
+  .contact__orbe{
+    width: 501px;
+    height: 641px;
+    border-radius: 258px 258px 16px 16px;
+
+  }
+  .value__img,
+  .contact__img{
+    width: 461px;
+    height: 601px;
+    border-radius: 238px 238px 12px 12px;
+
+  }
+  .value__img img,
+  .contact__img img{
+    max-width: initial;
+    width: 490px;
+  }
+  .value__description,
+  .contact__description{
+    font-size: var(--normal-font-size);
+    margin-bottom: 2.5rem;
+
+  }
+  .value__accordion-title{
+    font-size: var(--normal-font-size);
+
+  }
+  .value__accordion-item{
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+  }
+  .value__accordion-description{
+    padding-bottom: 1rem;
+    font-size: var(--small-font-size)
+  }
+  
+  .contact__card{
+    grid-template-columns: repeat(2, 200px);
+  }
+  .contact__card-box{
+    padding: 28px 1.5rem 1.5rem;
+  }
+  .subscribe__container{
+    padding: 4rem 10rem 4.5rem;
+    border-radius: 2rem;
+    border: 12px solid var(--first-color-light);
+  }
+  .subscribe__title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .subscribre__description{
+    font-size: var(--normal-font-size);
+    padding: 0 8rem;
+
+  }
+  .subscribe__button{
+    font-size: var(--normal-font-size);
+
+  }
+  .footer__content{
+    grid-template-columns: repeat(4, max-content);
+  }
+  .footer__title{
+    margin-bottom: 1.5rem;
+  }
+  .footer__links{
+    row-gap: 1rem;
+
+  }
+  .footer__info{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+
+  }
+  .show-scroll{
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+@media screen and (min-width : 1040px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .home__container{
+    column-gap: 4rem;
+  }
+}
+/* For 2K & 4K resolutions */
+@media screen and (min-width : 2048px){
+  body{
+    zoom: 1.5;
+  }
+}
+@media screen and(min-width : 3840px) {
+  body{
+    zoom: 2;
+  }
+  
+}
